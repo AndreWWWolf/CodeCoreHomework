@@ -8,49 +8,49 @@ let arr =  process.argv.slice(2);
 function drawLine(num) {
     let line = '';
     for (let i = 0; i < num; i++) {
-        line += '\u2500';
+        line += '\u2501';
     }
     return line;
 }
 // function to create top border to match initial line length
 function drawTopBorder(num) {
     let line = '';
-    line += '\u250C';
+    line += '\u250F';
     for (let i = 0; i < num; i++) {
-        line += '\u2500';
+        line += '\u2501';
     }
-    line += '\u2510';
+    line += '\u2513';
     return line;
 }
 // function to create middle border between name 1 && 2, 2 && 3
 function drawMiddleBorder(num) {
     let line = '';
-    line += '\u251C';
+    line += '\u251F';
     for (let i = 0; i < num; i++) {
-        line += '\u2500';
+        line += '\u2501';
     }
-    line += '\u2524';
+    line += '\u252B';
     return line;
 }
 // function to create bottom border to match initial line length
 function drawBottomBorder(num) {
     let line = '';
-    line += '\u2514';
+    line += '\u2517';
     for (let i = 0; i < num; i++) {
-        line += '\u2500';
+        line += '\u2501';
     }
-    line += '\u2518';
+    line += '\u251B';
     return line;
 }
 // function to add vertical bars at the spaces outside of the longest string in the arr
 function drawBarsAround(str, spc) {
     let line = '';
-    line += '\u2502';
+    line += '\u2503';
     line += str;
     for (let i = 0; i < spc; i++) {
         line += ' ';
     }
-    line += '\u2502';
+    line += '\u2503';
     return line;
 }
 // function to combine all lines together as a box
